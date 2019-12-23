@@ -28,7 +28,7 @@ def banner():
              |#########################|        [__ ._ _ [__) _ ._ _ |_  _ ._.
             |###########################|       [___[ | )[__)(_)[ | )[_)(/,[
            |#############################|
-           |#############################|              Author: w3w3w3
+           |#############################|              Author: EnzoZertio
            |#############################|
             |###########################|
              \#########################/
@@ -44,7 +44,7 @@ class Email_Bomber:
 
     def __init__(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ Initializing program ]+]+]+')
+            print(bcolors.RED + '\n+[+[+[ 1ère étape du script ]+]+]+')
             self.target = str(input(bcolors.GREEN + 'Adresse Mail Victime <: '))
             self.mode = int(input(bcolors.GREEN + 'Choisis ton option (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) <: '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
@@ -55,7 +55,7 @@ class Email_Bomber:
 
     def bomb(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ Setting up bomb ]+]+]+')
+            print(bcolors.RED + '\n+[+[+[ 2ème étape du script ]+]+]+')
             self.amount = None
             if self.mode == int(1):
                 self.amount = int(1000)
@@ -65,13 +65,13 @@ class Email_Bomber:
                 self.amount = int(250)
             else:
                 self.amount = int(input(bcolors.GREEN + 'Combien de Spam vont être envoyés  <: '))
-            print(bcolors.RED + f'\n+[+[+[ Tu as sélectionné l option: {self.mode} and {self.amount} emails ]+]+]+')
+            print(bcolors.RED + f'\n+[+[+[ Tu as sélectionné l option: {self.mode} et {self.amount} emails seront envoyés ]+]+]+')
         except Exception as e:
             print(f'ERROR: {e}')
 
     def email(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ Setting up email ]+]+]+')
+            print(bcolors.RED + '\n+[+[+[ dernière étape du script ]+]+]+')
             self.server = str(input(bcolors.GREEN + 'Entre : 1:Gmail 2:Yahoo 3:Outlook <: '))
             premade = ['1', '2', '3']
             default_port = True
