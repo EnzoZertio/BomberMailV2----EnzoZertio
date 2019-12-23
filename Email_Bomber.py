@@ -4,15 +4,15 @@ import sys
 
 
 class bcolors:
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    RED = '\033[91m'
+    PURPLE = '\033[92m'
+    PURPLE = '\033[93m'
+    PURPLE = '\033[91m'
 
 
 def banner():
     print(bcolors.GREEN + '\~~~BomberMail V2~~~/')
-    print(bcolors.GREEN + '\~~~Créer avec Python~~~/')
-    print(bcolors.GREEN + '''
+    print(bcolors.YELLOW + '\~~~Créer avec Python~~~/')
+    print(bcolors.RED + '''
                      \|/
                        `--+--'
                           |
@@ -43,7 +43,7 @@ class Email_Bomber:
         try:
             print(bcolors.RED + '\n\~~~1ère étape du script~~~/')
             self.target = str(input(bcolors.GREEN + 'Écrit l adresse mail de ta victime ➡️ : '))
-            self.mode = int(input(bcolors.GREEN + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(personnalisable) ➡️ : '))
+            self.mode = int(input(bcolors. + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(personnalisable) ➡️ : '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print('ERROR: Option invalide. Aurevoir.')
                 sys.exit(1)
