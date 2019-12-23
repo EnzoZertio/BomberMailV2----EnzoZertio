@@ -43,7 +43,7 @@ class Email_Bomber:
         try:
             print(bcolors.RED + '\n\~~~1ère étape du script~~~/')
             self.target = str(input(bcolors.GREEN + 'Écrit l adresse mail de ta victime ➡️ : '))
-            self.mode = int(input(bcolors. + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(personnalisable) ➡️ : '))
+            self.mode = int input bcolors. + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(personnalisable) ➡️ : '
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print('ERROR: Option invalide. Aurevoir.')
                 sys.exit(1)
@@ -61,7 +61,7 @@ class Email_Bomber:
             elif self.mode == int(3):
                 self.amount = int(250)
             else:
-                self.amount = int(input(bcolors.GREEN + 'Combien de Spam vont être envoyés ? : '))
+                self.amount = int(input(bcolors.GREEN + 'Choose a CUSTOM amount <: '))
             print(bcolors.RED + f'\n\~~~Tu as sélectionné l option: {self.mode} et {self.amount} emails seront envoyés~~~/')
         except Exception as e:
             print(f'ERROR: {e}')
