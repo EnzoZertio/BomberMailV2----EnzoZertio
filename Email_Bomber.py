@@ -7,12 +7,13 @@ class bcolors:
     GREEN = '\033[92m'
     YELLOW = "\033[93m"
     RED = "\033[91m"
+    BLUE = '\033[94m'
 
 
 def banner():
-    print(bcolors.RED + '\~~~BomberMail V2~~~/')
-    print(bcolors.RED + '\~~~Créer avec Python~~~/')
-    print(bcolors.RED + ''' 
+    print(bcolors.BLUE + '\~~~BomberMail V2~~~/')
+    print(bcolors.BLUE + '\~~~Créer avec Python~~~/')
+    print(bcolors.BLUE + ''' 
                      \|/
                        `--+--'
                           |
