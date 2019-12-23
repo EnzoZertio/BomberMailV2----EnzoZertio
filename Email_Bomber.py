@@ -43,7 +43,7 @@ class Email_Bomber:
         try:
             print(bcolors.RED + '\n\~~~1ère étape du script~~~/')
             self.target = str(input(bcolors.GREEN + 'Écrit l adresse mail de ta victime ➡️ : '))
-            self.mode = int input bcolors. + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(personnalisable) ➡️ : '
+            self.mode = int(input(bcolors.GREEN + 'Enter BOMB mode (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) <: '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print('ERROR: Option invalide. Aurevoir.')
                 sys.exit(1)
