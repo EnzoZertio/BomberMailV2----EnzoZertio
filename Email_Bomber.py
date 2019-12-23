@@ -42,7 +42,7 @@ class Email_Bomber:
     def __init__(self):
         try:
             print(bcolors.RED + '\n\~~~1ère étape du script~~~/')
-            self.target = str(input(bcolors.GREEN + 'Adresse Mail Victime <: '))
+            self.target = str(input(bcolors.GREEN + 'Écrit l adresse mail de ta victime ➡️ : '))
             self.mode = int(input(bcolors.GREEN + 'Choisis ton option (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) <: '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print('ERROR: Option invalid. Aurevoir.')
