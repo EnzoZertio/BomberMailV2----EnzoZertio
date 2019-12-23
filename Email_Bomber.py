@@ -14,8 +14,8 @@ class bcolors:
 
 
 def banner():
-    print(bcolors.CYAN + '\~~~BomberMail V2~~~/')
-    print(bcolors.CYAN + '\~~~Créer avec Python~~~/')
+    print(bcolors.GREEN + '\~~~BomberMail V2~~~/')
+    print(bcolors.GREEN + '\~~~Créer avec Python~~~/')
     print(bcolors.ORANGE + ''' 
                      \|/
                        `--+--'
