@@ -1,7 +1,3 @@
-#// Don't forget to hit SUBSCRIBE, COMMENT, LIKE, SHARE! and LEARN... :)
-# But srsly, hit that sub button so you don't miss out on more content! 
-
-
 '''imports'''
 import smtplib
 import sys
@@ -14,8 +10,8 @@ class bcolors:
 
 
 def banner():
-    print(bcolors.GREEN + '+[+[+[ Email-Bomber v1.0 ]+]+]+')
-    print(bcolors.GREEN + '+[+[+[ made with codes ]+]+]+')
+    print(bcolors.GREEN + '\~~~BomberMail V2~~~/')
+    print(bcolors.GREEN + '\~~~Créer avec Python~~~/')
     print(bcolors.GREEN + '''
                      \|/
                        `--+--'
@@ -28,16 +24,18 @@ def banner():
              |#########################|        [__ ._ _ [__) _ ._ _ |_  _ ._.
             |###########################|       [___[ | )[__)(_)[ | )[_)(/,[
            |#############################|
-           |#############################|              Author: w3w3w3
+           |#############################|              Créer par HaXor DeRoutine
            |#############################|
             |###########################|
              \#########################/
               `.#####################,'
                 `._###############_,'
-                   `--..#####..--'                                 ,-.--.
-*.______________________________________________________________,' (Bomb)
-                                                                    `--' ''')
-                                                                                                          
+
+                   `--..#####..--'                                 
+(Bomb)
+                                                                    
+
+                                                               
 class Email_Bomber:
     count = 0
 
