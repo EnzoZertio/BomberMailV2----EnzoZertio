@@ -42,8 +42,8 @@ class Email_Bomber:
     def __init__(self):
         try:
             print(bcolors.RED + '\n\~~~1ère étape du script~~~/')
-            self.target = str(input(bcolors.GREEN + 'Écrit l adresse mail de ta victime ➡️ : '))
-            self.mode = int(input(bcolors.GREEN + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(Personnalisable) ➡️ : '))
+            self.target = str(input(bcolors.PURPLE + 'Écrit l adresse mail de ta victime ➡️ : '))
+            self.mode = int(input(bcolors.PURPLE + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(Personnalisable) ➡️ : '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print('ERROR: Option invalide. Aurevoir.')
                 sys.exit(1)
@@ -61,7 +61,7 @@ class Email_Bomber:
             elif self.mode == int(3):
                 self.amount = int(250)
             else:
-                self.amount = int(input(bcolors.GREEN + 'Combien de mails seront envoyés ? : '))
+                self.amount = int(input(bcolors.PURPLE + 'Combien de mails seront envoyés ? : '))
             print(bcolors.RED + f'\n\~~~Tu as sélectionné l option: {self.mode} et {self.amount} emails seront envoyés~~~/')
         except Exception as e:
             print(f'ERROR: {e}')
@@ -69,12 +69,12 @@ class Email_Bomber:
     def email(self):
         try:
             print(bcolors.RED + '\n\~~~Dernière étape du script~~~/')
-            self.server = str(input(bcolors.GREEN + 'Écrit : 1:Gmail 2:Yahoo 3:Outlook ➡️ : '))
+            self.server = str(input(bcolors.PURPLE + 'Écrit : 1:Gmail 2:Yahoo 3:Outlook ➡️ : '))
             premade = ['1', '2', '3']
             default_port = True
             if self.server not in premade:
                 default_port = False
-                self.port = int(input(bcolors.GREEN + 'Enter port number <: '))
+                self.port = int(input(bcolors.PURPLE + 'Enter port number <: '))
 
             if default_port == True:
                 self.port = int(587)
@@ -86,11 +86,11 @@ class Email_Bomber:
             elif self.server == '3':
                 self.server = 'smtp-mail.outlook.com'
 
-            self.fromAddr = str(input(bcolors.GREEN + 'Écrit ton adresse email ➡️ : '))
-            self.fromPwd = str(input(bcolors.GREEN + 
+            self.fromAddr = str(input(bcolors.PURPLE + 'Écrit ton adresse email ➡️ : '))
+            self.fromPwd = str(input(bcolors.PURPLE + 
 'Écrit ton mot de passe ➡️ : '))
-            self.subject = str(input(bcolors.GREEN + 'Écrit le sujet du mail ➡️ : '))
-            self.message = str(input(bcolors.GREEN + 'Écrit le message que va contenir le mail ➡️ : '))
+            self.subject = str(input(bcolors.PURPLE + 'Écrit le sujet du mail ➡️ : '))
+            self.message = str(input(bcolors.PURPLE + 'Écrit le message que va contenir le mail ➡️ : '))
 
             self.msg = '''From: %s\nTo: %s\nSubject %s\n%s\n
             ''' % (self.fromAddr, self.target, self.subject, self.message)
