@@ -10,6 +10,7 @@ class bcolors:
     CYAN = '\033[96m'
     ORANGE = '\033[33m'
     PURPLE = '\033[45m'
+    BLUE = '\033[34m'
     
 
 
