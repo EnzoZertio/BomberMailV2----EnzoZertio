@@ -14,8 +14,8 @@ class bcolors:
 
 
 def banner():
-    print(bcolors.GREEN + '+[+[+[ Email-Bomber v1.0 ]+]+]+')
-    print(bcolors.GREEN + '+[+[+[ made with codes ]+]+]+')
+    print(bcolors.GREEN + '\~~~BomberMail v2~~~/')
+    print(bcolors.GREEN + '\~~~Créer avec Python~~~/')
     print(bcolors.GREEN + '''
                      \|/
                        `--+--'
@@ -28,7 +28,7 @@ def banner():
              |#########################|        [__ ._ _ [__) _ ._ _ |_  _ ._.
             |###########################|       [___[ | )[__)(_)[ | )[_)(/,[
            |#############################|
-           |#############################|              Author: w3w3w3
+           |#############################|              Created By HaXor DeRoutine
            |#############################|
             |###########################|
              \#########################/
