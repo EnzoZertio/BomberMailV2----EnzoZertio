@@ -114,11 +114,11 @@ class Email_Bomber:
             print(f'ERROR: {e}')
 
     def attack(self):
-        print(bcolors.PURPLE + '\n \~~~Attaque en cours...~~~/')
+        print(bcolors.RED + '\n \~~~Attaque en cours...~~~/')
         for email in range(self.amount+1):
             self.send()
         self.s.close()
-        print(bcolors.PURPLE + '\n \~~~Attaque finie~~~/')
+        print(bcolors.RED + '\n \~~~Attaque finie~~~/')
         sys.exit(0)
 
 
