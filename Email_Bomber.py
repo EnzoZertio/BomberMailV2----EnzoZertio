@@ -109,7 +109,7 @@ class Email_Bomber:
         try:
             self.s.sendmail(self.fromAddr, self.target, self.msg)
             self.count +=1
-            print(bcolors.YELLOW + f'BOMB: {self.count}')
+            print(bcolors.YELLOW + f'email envoyé: {self.count}')
         except Exception as e:
             print(f'ERROR: {e}')
 
