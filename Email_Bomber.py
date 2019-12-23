@@ -44,7 +44,7 @@ class Email_Bomber:
 
     def __init__(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ 1ère étape du script ]+]+]+')
+            print(bcolors.RED + '\n\~~~1ère étape du script~~~/')
             self.target = str(input(bcolors.GREEN + 'Adresse Mail Victime <: '))
             self.mode = int(input(bcolors.GREEN + 'Choisis ton option (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) <: '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
@@ -55,7 +55,7 @@ class Email_Bomber:
 
     def bomb(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ 2ème étape du script ]+]+]+')
+            print(bcolors.RED + '\n\~~~2ème étape du script~~~/')
             self.amount = None
             if self.mode == int(1):
                 self.amount = int(1000)
@@ -71,7 +71,7 @@ class Email_Bomber:
 
     def email(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ dernière étape du script ]+]+]+')
+            print(bcolors.RED + '\n\~~~Dernière étape du script~~~/')
             self.server = str(input(bcolors.GREEN + 'Entre : 1:Gmail 2:Yahoo 3:Outlook <: '))
             premade = ['1', '2', '3']
             default_port = True
@@ -128,3 +128,4 @@ if __name__=='__main__':
     bomb.bomb()
     bomb.email()
     bomb.attack()
+    
