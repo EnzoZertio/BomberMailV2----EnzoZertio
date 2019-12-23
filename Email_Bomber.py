@@ -4,15 +4,15 @@ import sys
 
 
 class bcolors:
-    PURPLE = '\033[92m'
+    GREEN = '\033[92m'
     YELLOW = '\033[93m'
     RED = '\033[91m'
 
 
 def banner():
-    print(bcolors.PURPLE + '\~~~BomberMail V2~~~/')
-    print(bcolors.PURPLE + '\~~~Créer avec Python~~~/')
-    print(bcolors.PURPLE + '''
+    print(bcolors.GREEN + '\~~~BomberMail V2~~~/')
+    print(bcolors.GREEN + '\~~~Créer avec Python~~~/')
+    print(bcolors.GREEN + '''
                      \|/
                        `--+--'
                           |
