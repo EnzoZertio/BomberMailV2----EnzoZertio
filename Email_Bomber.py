@@ -9,7 +9,6 @@ class bcolors:
     RED = "\033[91m"
     CYAN = '\033[96m'
     ORANGE = '\033[33m'
-    PURPLE = '\033[45m'
     BLUE = '\033[34m'
     
 
@@ -46,7 +45,7 @@ class Email_Bomber:
 
     def __init__(self):
         try:
-            print(bcolors.PURPLE + '\n\~~~1ère étape du script~~~/')
+            print(bcolors.CYAN + '\n\~~~1ère étape du script~~~/')
             self.target = str(input(bcolors.BLUE + 'Écrit l adresse mail de ta victime ➡️ : '))
             self.mode = int(input(bcolors.BLUE + 'Choisis l option qui te convient || 1:(1000) 2:(500) 3:(250) 4:(Personnalisable) ➡️ : '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
@@ -57,7 +56,7 @@ class Email_Bomber:
 
     def bomb(self):
         try:
-            print(bcolors.PURPLE + '\n\~~~2ème étape du script~~~/')
+            print(bcolors.CYAN + '\n\~~~2ème étape du script~~~/')
             self.amount = None
             if self.mode == int(1):
                 self.amount = int(1000)
@@ -73,7 +72,7 @@ class Email_Bomber:
 
     def email(self):
         try:
-            print(bcolors.PURPLE + '\n\~~~Dernière étape du script~~~/')
+            print(bcolors.CYAN + '\n\~~~Dernière étape du script~~~/')
             self.server = str(input(bcolors.BLUE + 'Écrit : 1:Gmail 2:Yahoo 3:Outlook ➡️ : '))
             premade = ['1', '2', '3']
             default_port = True
