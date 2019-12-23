@@ -10,8 +10,8 @@ class bcolors:
 
 
 def banner():
-    print(bcolors.GREEN + '+[+[+[ Email-Bomber v1.0 ]+]+]+')
-    print(bcolors.GREEN + '+[+[+[ made with codes ]+]+]+')
+    print(bcolors.GREEN + '\~~~BomberMail V2~~~/')
+    print(bcolors.GREEN + '\~~~Créer avec Python~~~/')
     print(bcolors.GREEN + '''
                      \|/
                        `--+--'
